@@ -11,7 +11,7 @@ $(document).on('ready', function() {
 		}
 		$(this).children().toggleClass("change");
 	});
-	
+
 	$('#main').on('click', function() {							// close a sideMenu on main container click
 		if ($('#sideMenu').css('right') == '0px') {
 			$('#sideMenu').animate({right: '-250px'}, 52);
@@ -19,4 +19,20 @@ $(document).on('ready', function() {
 			$('#menuBtn').children().removeClass("change");		// return to normal menu icon
 		}
 	});
+
+	// PHOTOS MODAL
+	var modal = $('#myModal');
+	var modalImg = $('#img01');
+	var captionText = $('#caption');
+	$('.myImg').each(function() {
+			$(this).on('click', function() {
+					modal.css({'display':'block'});
+					modalImg.attr('src', $(this).attr('src'));
+					captionText.text($(this).attr('alt'));
+			});
+	});
+	$('#closeModal').on('click', function() {
+			modal.css({'display':'none'});
+	});
+
 });

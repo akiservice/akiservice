@@ -7,12 +7,12 @@
 		<title>Man and Van Aberdeen, Scotland by aki service maintenance</title>
 		<!-- CSS -->
 		<link rel="stylesheet" href="assets/css/style.css">
-		<link href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">		
+		<link href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
 		<!-- Google Fonts -->
 		<link href="https://fonts.googleapis.com/css?family=Parisienne|Anton|Fredoka+One" rel="stylesheet">
 	</head>
-	<body>		
-		<div id="main">		
+	<body>
+		<div id="main">
 			<header>
 				<nav id="menuBar" class="navbar-default">
 					<div class="navbar-header">
@@ -53,6 +53,27 @@
 							<li><span class="glyphicon glyphicon-leaf" aria-hidden="true"></span>Single items</li>
 						</ul>
 						<p>Customers can travel in a van. Last minute booking available.</p>
+						<hr>
+						<h3>Photos</h3>
+						<div class="imgContainer">
+							<!-- Trigger the Modal -->
+							<div class="row">
+								<div class="col-xs-6 col-sm-4 col-md-2">
+										<img class="myImg" src="assets/images/mav1.jpg" alt="small removal" width="300" height="200">
+								</div>
+									<div class="col-xs-6 col-sm-4 col-md-2">
+										<img class="myImg" src="assets/images/mav2.jpg" alt="long distance removal" width="300" height="200">
+								</div>
+									<div class="col-xs-6 col-sm-4 col-md-2">
+										<img class="myImg" src="assets/images/mav3.jpg" alt="single item removal" width="300" height="200">
+								</div>
+							</div>
+							<div id="myModal" class="modal">
+								<span id="closeModal">&times;</span>
+								<img class="modal-content" id="img01">
+								<div id="caption"></div>
+							</div>
+						</div>
 					</div>
 				</div>
 			</main>

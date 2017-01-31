@@ -5,6 +5,13 @@ html, body {
 	background-color: rgba(0,0,0,.9);
 }
 
+main .infoText hr {
+	border: 0;
+    height: 1px;
+    background: rgba(85,135,15,1);
+    background-image: linear-gradient(to right, #ccc, rgba(85,135,15,1), #ccc);
+}
+
 a.navbar-brand {
 	font-family: 'Expletus Sans', cursive;
 	color: black !important;
@@ -410,7 +417,7 @@ main .infoContainer .infoText p {
               transform: translate3d(-50%,-50%,0);
 }
 .hero h1 {
-    font-size: 4em;    
+    font-size: 4em;
     font-weight: bold;
     margin: 0;
     padding: 0;
@@ -419,18 +426,18 @@ main .infoContainer .infoText p {
 .fade-carousel .carousel-inner .item .hero {
     opacity: 0;
     -webkit-transition: 2s all ease-in-out .1s;
-       -moz-transition: 2s all ease-in-out .1s; 
-        -ms-transition: 2s all ease-in-out .1s; 
-         -o-transition: 2s all ease-in-out .1s; 
-            transition: 2s all ease-in-out .1s; 
+       -moz-transition: 2s all ease-in-out .1s;
+        -ms-transition: 2s all ease-in-out .1s;
+         -o-transition: 2s all ease-in-out .1s;
+            transition: 2s all ease-in-out .1s;
 }
 .fade-carousel .carousel-inner .item.active .hero {
     opacity: 1;
     -webkit-transition: 2s all ease-in-out .1s;
-       -moz-transition: 2s all ease-in-out .1s; 
-        -ms-transition: 2s all ease-in-out .1s; 
-         -o-transition: 2s all ease-in-out .1s; 
-            transition: 2s all ease-in-out .1s;    
+       -moz-transition: 2s all ease-in-out .1s;
+        -ms-transition: 2s all ease-in-out .1s;
+         -o-transition: 2s all ease-in-out .1s;
+            transition: 2s all ease-in-out .1s;
 }
 
 /********************************/
@@ -448,7 +455,7 @@ main .infoContainer .infoText p {
 /********************************/
 /*       Slides backgrounds     */
 /********************************/
-.fade-carousel .slides .slide-1, 
+.fade-carousel .slides .slide-1,
 .fade-carousel .slides .slide-2,
 .fade-carousel .slides .slide-3,
 .fade-carousel .slides .slide-4 {
@@ -458,7 +465,7 @@ main .infoContainer .infoText p {
   background-repeat: no-repeat;
 }
 .fade-carousel .slides .slide-1 {
-  background-image: url('../images/fence_painting.jpg'); 
+  background-image: url('../images/fence_painting.jpg');
 }
 .fade-carousel .slides .slide-2 {
   background-image: url('../images/planting.jpg');
@@ -470,8 +477,91 @@ main .infoContainer .infoText p {
   background-image: url('../images/garden_design.jpg');
 }
 
+/*PHOTOS MODAL*/
+.myImg {
+    border-radius: 3px;
+    cursor: pointer;
+    transition: 0.3s;
+		margin-bottom: 10px;
+		width: 100%;
+		height: auto;
+}
 
-/* Extra Small Devices, Phones */ 
+.myImg:hover {opacity: 0.7;}
+
+/* The Modal (background) */
+.modal {
+    display: none; /* Hidden by default */
+    position: fixed; /* Stay in place */
+    z-index: 1; /* Sit on top */
+    padding-top: 70px; /* Location of the box */
+    left: 0;
+    top: 0;
+    width: 100%; /* Full width */
+    height: 100%; /* Full height */
+    overflow: hidden; /* Enable scroll if needed */
+    background-color: rgb(0,0,0); /* Fallback color */
+    background-color: rgba(0,0,0,0.9); /* Black w/ opacity */
+}
+
+/* Modal Content (Image) */
+.modal-content {
+    margin: auto;
+    display: block;
+    width: 80%;
+    max-width: 700px;
+}
+
+/* Caption of Modal Image (Image Text) - Same Width as the Image */
+#caption {
+    margin: auto;
+    display: block;
+    width: 80%;
+    max-width: 700px;
+    text-align: center;
+    color: #ccc;
+    padding: 10px 0;
+    height: 150px;
+}
+
+/* Add Animation - Zoom in the Modal */
+.modal-content, #caption {
+    -webkit-animation-name: zoom;
+    -webkit-animation-duration: 0.6s;
+    animation-name: zoom;
+    animation-duration: 0.6s;
+}
+
+@-webkit-keyframes zoom {
+    from {-webkit-transform:scale(0)}
+    to {-webkit-transform:scale(1)}
+}
+
+@keyframes zoom {
+    from {transform:scale(0)}
+    to {transform:scale(1)}
+}
+
+/* The Close Button */
+#closeModal {
+    position: absolute;
+    top: 5px;
+    right: 25px;
+    color: #f1f1f1;
+    font-size: 40px;
+    font-weight: bold;
+    transition: 0.3s;
+}
+
+#closeModal:hover,
+#closeModal:focus {
+    color: #bbb;
+    text-decoration: none;
+    cursor: pointer;
+}
+
+
+/* Extra Small Devices, Phones */
 @media only screen and (min-width : 480px) {
 	main .infoContainer .infoText h2 {
 		text-align: left;
@@ -501,7 +591,7 @@ main .infoContainer .infoText p {
 	#telOnLarge	{
 		display: block;
 	}
-	
+
 	#menuBtn {
 		display: none;
 	}
@@ -516,7 +606,11 @@ main .infoContainer .infoText p {
 	main .aboutContainer .infoText {
 		margin: 25px;
 	}
-    .hero h1 { font-size: 2em; } 
+    .hero h1 { font-size: 2em; }
+
+	.modal-content {
+			width: 100%;
+	}
 }
 
 /* Medium Devices, Desktops */
@@ -524,7 +618,7 @@ main .infoContainer .infoText p {
 	.navbar-default .navbar-nav > li > a {
 		font-size: 1.2em;
 	}
-    .hero { width: 980px; }    
+    .hero { width: 980px; }
 }
 
 @media (min-width: 768px) and (max-width: 1000px) {
