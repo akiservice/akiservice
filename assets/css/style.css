@@ -494,21 +494,20 @@ main .infoContainer .infoText p {
     display: none; /* Hidden by default */
     position: fixed; /* Stay in place */
     z-index: 1; /* Sit on top */
-    padding-top: 70px; /* Location of the box */
     left: 0;
     top: 0;
+		padding-top: 10px;
     width: 100%; /* Full width */
     height: 100%; /* Full height */
-    overflow: hidden; /* Enable scroll if needed */
     background-color: rgb(0,0,0); /* Fallback color */
     background-color: rgba(0,0,0,0.9); /* Black w/ opacity */
 }
 
 /* Modal Content (Image) */
 .modal-content {
-    margin: auto;
+    margin: 0 auto;
     display: block;
-    width: 80%;
+    width: 100%;
     max-width: 700px;
 }
 
@@ -520,8 +519,8 @@ main .infoContainer .infoText p {
     max-width: 700px;
     text-align: center;
     color: #ccc;
-    padding: 10px 0;
-    height: 150px;
+		position: relative;
+		top: -50px;
 }
 
 /* Add Animation - Zoom in the Modal */
@@ -542,25 +541,6 @@ main .infoContainer .infoText p {
     to {transform:scale(1)}
 }
 
-/* The Close Button */
-#closeModal {
-    position: absolute;
-    top: 5px;
-    right: 25px;
-    color: #f1f1f1;
-    font-size: 40px;
-    font-weight: bold;
-    transition: 0.3s;
-}
-
-#closeModal:hover,
-#closeModal:focus {
-    color: #bbb;
-    text-decoration: none;
-    cursor: pointer;
-}
-
-
 /* Extra Small Devices, Phones */
 @media only screen and (min-width : 480px) {
 	main .infoContainer .infoText h2 {
@@ -580,6 +560,9 @@ main .infoContainer .infoText p {
 	main .infoContainer .infoText h2,
 	main .infoContainer .infoText p	{
 		padding: 0 100px;
+	}
+	.modal-content {
+			width: 70%;
 	}
 }
 
@@ -606,11 +589,7 @@ main .infoContainer .infoText p {
 	main .aboutContainer .infoText {
 		margin: 25px;
 	}
-    .hero h1 { font-size: 2em; }
-
-	.modal-content {
-			width: 100%;
-	}
+  .hero h1 { font-size: 2em; }
 }
 
 /* Medium Devices, Desktops */
@@ -629,5 +608,11 @@ main .infoContainer .infoText p {
 
 /* Large Devices, Wide Screens */
 @media only screen and (min-width : 1200px) {
+
+}
+
+
+/* 100% Image Width on Smaller Screens */
+@media only screen and (max-width: 700px){
 
 }
