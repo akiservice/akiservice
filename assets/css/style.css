@@ -2,7 +2,7 @@
 html, body {
 	padding: 0px;
 	margin: 0px;
-	background-color: rgba(0,0,0,.9);
+	background-color: rgba(40,40,55,1);
 }
 
 main .infoText hr {
@@ -28,11 +28,23 @@ a.navbar-brand img {
 	font-family: 'Anton', sans-serif;
 	color: #333 !important;
 	padding-left: 10px;
+	width: 100%;
+	height: 100%;
+	background-color: white;
+  transition: .5s;
+}
+
+.navbar-default .navbar-nav > li:hover {
+	background-color: white;
+	-ms-transform: rotate(-3deg); /* IE 9 */
+  -webkit-transform: rotate(-3deg); /* Chrome, Safari, Opera */
+  transform: rotate(-3deg);
 }
 
 .navbar-default .navbar-nav > li > a:hover {
-	border-bottom: 3px ridge white;
-	color: rgb(140,200,25) !important;
+	color: rgb(55,125,15) !important;
+	border-left: 1px solid #ccc;
+	border-right: 1px solid #ccc;
 }
 
 #telOnLarge {
@@ -127,12 +139,16 @@ main .container {
 }
 
 main > h1 {
-	background-color: rgba(85,135,15,1);
+	background-image: url('../images/abs.jpg');
+	width: 100%;
+	height: 100%;
 	color: white;
 	padding: 25px;
 	margin: 0;
 	font-size: 2.2em;
 	font-family: 'Fredoka One', cursive;
+	text-shadow: 0 0 15px black;
+  box-shadow:10px 10px 40px 10px black inset;
 }
 
 .service {
@@ -169,29 +185,34 @@ main > h1 {
 #wells ul {
 	list-style: none;
 	padding: 0;
+	margin-bottom: 30px;
 }
 
 #wells ul li {
-	padding: 30px 0;
+	padding: 27px 0;
+	margin: -20px 0 10px 0;
+	-ms-transform: rotate(-3deg); /* IE 9 */
+  -webkit-transform: rotate(-3deg); /* Chrome, Safari, Opera */
+  transform: rotate(-3deg);
 }
 
 #wells ul > a:nth-child(1) li {
-	background-color: rgba(100,180,10,.7);
+	background-color: rgba(50,190,10,1);
 	text-shadow: 0 0 15px black;
 }
 
 #wells ul > a:nth-child(2) li {
-	background-color: rgba(190,190,0,.7);
+	background-color: rgba(250,20,100,1);
 	text-shadow: 0 0 15px black;
 }
 
 #wells ul > a:nth-child(3) li {
-	background-color: rgba(175,100,15,.7);
+	background-color: rgba(245,190,10,1);
 	text-shadow: 0 0 15px black;
 }
 
 #wells ul > a:nth-child(4) li {
-	background-color: rgba(45,80,145,.7);
+	background-color: rgba(0,160,230,1);
 	text-shadow: 0 0 15px black;
 }
 
@@ -341,8 +362,17 @@ footer address {
 .center {
 	text-align: center;
 }
+/*
+main.gardening .infoContainer {
+	background-image: url('../images/close-up.jpg');
+	background-size: cover;
+}
 
-/*Other pages*/
+main.manvan .infoContainer {
+	background-image: url('../images/morning.jpg');
+	background-size: cover;
+}
+*/
 main .infoContainer {
 	background-color: rgba(255,255,255,1);
 	font-size: 1.5em;
@@ -417,7 +447,7 @@ main .infoContainer .infoText p {
               transform: translate3d(-50%,-50%,0);
 }
 .hero h1 {
-    font-size: 4em;
+		font-size: 2.5em;
     font-weight: bold;
     margin: 0;
     padding: 0;
@@ -478,12 +508,16 @@ main .infoContainer .infoText p {
 }
 
 /*PHOTOS MODAL*/
+.imgContainer {
+	background-color: rgba(255,255,255,.5);
+}
+
 .myImg {
     border-radius: 3px;
     cursor: pointer;
     transition: 0.3s;
-		margin-bottom: 10px;
-		width: 100%;
+		padding: 10px;
+		max-width: 100%;
 		height: auto;
 }
 
@@ -589,7 +623,9 @@ main .infoContainer .infoText p {
 	main .aboutContainer .infoText {
 		margin: 25px;
 	}
-  .hero h1 { font-size: 2em; }
+  .hero h1 {
+		font-size: 3em;
+	}
 }
 
 /* Medium Devices, Desktops */
@@ -597,7 +633,12 @@ main .infoContainer .infoText p {
 	.navbar-default .navbar-nav > li > a {
 		font-size: 1.2em;
 	}
-    .hero { width: 980px; }
+    .hero {
+			 width: 980px;
+		 }
+		 .hero h1 {
+		 		font-size: 3.5em;
+		 }
 }
 
 @media (min-width: 768px) and (max-width: 1000px) {
@@ -608,11 +649,7 @@ main .infoContainer .infoText p {
 
 /* Large Devices, Wide Screens */
 @media only screen and (min-width : 1200px) {
-
-}
-
-
-/* 100% Image Width on Smaller Screens */
-@media only screen and (max-width: 700px){
-
+	.hero h1 {
+		 font-size: 4em;
+	}
 }
