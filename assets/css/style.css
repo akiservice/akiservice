@@ -242,6 +242,10 @@ a.col-lg-3 {
 	text-align: center;
 }
 
+footer {
+	padding-top: 20px;
+}
+
 footer address {
 	color: #999;
 }
