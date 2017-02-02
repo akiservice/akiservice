@@ -20,7 +20,7 @@ a.navbar-brand {
 }
 
 a.navbar-brand img {
-	max-width: 140px;
+	max-width: 155px;
 	padding: 0;
 }
 
@@ -243,7 +243,7 @@ a.col-lg-3 {
 }
 
 footer address {
-	color: #aaa;
+	color: #999;
 }
 
 /*Offer button*/
@@ -355,7 +355,7 @@ footer address {
 }
 
 .darkGrey {
-	color: #444;
+	color: rgb(90,150,45);
 	font-weight: bold;
 }
 
@@ -446,7 +446,7 @@ main .infoContainer .infoText p {
            -o-transform: translate3d(-50%,-50%,0);
               transform: translate3d(-50%,-50%,0);
 }
-.hero h1 {
+.hero h2 {
 		font-size: 2.5em;
     font-weight: bold;
     margin: 0;
@@ -575,6 +575,13 @@ main .infoContainer .infoText p {
     to {transform:scale(1)}
 }
 
+
+#developer {
+	font-size: .8em;
+	color: #555;
+}
+
+
 /* Extra Small Devices, Phones */
 @media only screen and (min-width : 480px) {
 	main .infoContainer .infoText h2 {
@@ -602,6 +609,13 @@ main .infoContainer .infoText p {
 
 /* Small Devices, Tablets */
 @media only screen and (min-width : 768px) {
+	#wells ul li {
+		padding: 27px 0;
+		margin: -20px 0 10px 0;
+		-ms-transform: rotate(0deg); /* IE 9 */
+	  -webkit-transform: rotate(0deg); /* Chrome, Safari, Opera */
+	  transform: rotate(0deg);
+	}
 	main .aboutContainer .infoText {
 		padding: 50px;
 	}
