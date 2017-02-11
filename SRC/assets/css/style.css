@@ -585,6 +585,10 @@ main .infoContainer .infoText p {
 	color: #555;
 }
 
+img.socialIcon {
+	width: 35px;
+}
+
 
 /* Extra Small Devices, Phones */
 @media only screen and (min-width : 480px) {
