@@ -23,10 +23,19 @@
 					<div>
 						<div class="collapse navbar-collapse">
 							<ul class="nav navbar-nav navbar-right">
-								<li><a href="gardening.html">Gardening Services</a></li>
-								<li><a href="#">Tree Surgeon</a></li>
-								<li><a href="rubbishremoval.html">Rubbish Removal</a></li>
-								<li><a href="manvan.html">Man and Van </a></li>
+								<li>
+									<div class="dropdown">
+									  <button class="dropbtn">Services</button>
+									  <div class="dropdown-content">
+									    <a href="gardening.html">Gardening Services</a>
+									    <a href="landscaping.html">Landscaping</a>
+											<a href="treesurgeon.html">Tree Surgeon</a>
+											<a href="powerwashing.html">Power Washing</a>
+											<a href="rubbishremoval.html">Rubbish Removal</a>
+									    <a href="manvan.html">Man and Van</a>
+									  </div>
+									</div>
+								</li>
 								<li><a href="aboutus.html">About us</a></li>
 							</ul>
 						</div>
@@ -119,7 +128,9 @@
 						<div class="col-xs-6 col-sm-4">
 							<span class="darkGrey">Site map:</span><br>
 							<a href="gardening.html">Gardening services</a><br>
+							<a href="landscaping.html">Landscaping</a><br>
 							<a href="treesurgeon.html">Tree surgeon</a><br>
+							<a href="powerwashing.html">Power Washing</a><br>
 							<a href="rubbishremoval.html">Rubbish removal</a><br>
 							<a href="manvan.html">Man and Van</a><br>
 							<a href="aboutus.html">About us</a>
@@ -153,7 +164,9 @@
 				</div>
 				<ul>
 					<a href="gardening.html"><li>Gardening Services</li></a>
-					<a href="#"><li>Tree Surgeon</li></a>
+					<a href="landscaping.html"><li>Landscaping</li></a>
+					<a href="treesurgeon.html"><li>Tree Surgeon</li></a>
+					<a href="powerwashing.html"><li>Power Washing</li></a>
 					<a href="rubbishremoval.html"><li>Rubbish Removal</li></a>
 					<a href="manvan.html"><li>Man and Van</li></a>
 					<a href="aboutus.html"><li>About us</li></a>
@@ -162,7 +175,7 @@
 		</div>
 		<!-- Js -->
 		<script src="lib/jquery-2.1.4.min.js"></script>
-		<script src="assets/scripts/script.js"></script></script>
+		<script src="assets/scripts/script.js"></script>
 		<script>
   (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
   (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
@@ -173,13 +186,5 @@
   ga('send', 'pageview');
 
 </script>
-<div id="fb-root"></div>
-<script>(function(d, s, id) {
-  var js, fjs = d.getElementsByTagName(s)[0];
-  if (d.getElementById(id)) return;
-  js = d.createElement(s); js.id = id;
-  js.src = "//connect.facebook.net/en_GB/sdk.js#xfbml=1&version=v2.8";
-  fjs.parentNode.insertBefore(js, fjs);
-}(document, 'script', 'facebook-jssdk'));</script>
 	</body>
 </html>
