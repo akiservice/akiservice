@@ -292,6 +292,20 @@ main > h1 {
 	padding: 15px;
 }
 
+#contentInfo img {
+	max-width: 150px;
+	border: 1px dashed red;
+}
+
+#contentInfo #promo {
+	color: #ccc;
+	font-size: 1.3em;
+}
+
+#contentInfo #promo > strong {
+	color: white;
+}
+
 #contentInfo h1 {
 	margin-top: 50px;
 	color: #eee;
