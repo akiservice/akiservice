@@ -678,6 +678,10 @@ img.socialIcon {
 	width: 35px;
 }
 
+.yell {
+	max-width: 100px;
+}
+
 
 /* Extra Small Devices, Phones */
 @media only screen and (min-width : 480px) {
