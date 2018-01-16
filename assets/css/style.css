@@ -601,17 +601,35 @@ main .infoContainer .infoText p {
 }
 
 /*PHOTOS MODAL*/
-.imgContainer {
-	background-color: rgba(255,255,255,.5);
+.imageContainer {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  flex-wrap: wrap;
+  height: 100%;
+}
+
+.imageWraper {
+	background-color: rgba(0,0,0,.3);
+	height: 120px;
+	width: 120px;
+	min-width: 120px;
+	margin: 3px;
+	display: flex;
+    align-items: center;
 }
 
 .myImg {
+	max-width: 100%;
+    max-height: 100%;
+	/*
     border-radius: 3px;
     cursor: pointer;
     transition: 0.3s;
 		padding: 10px;
 		max-width: 100%;
 		height: auto;
+		*/
 }
 
 .myImg:hover {opacity: 0.7;}
