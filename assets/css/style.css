@@ -203,6 +203,7 @@ main > h1 {
 	background-color: white;
 	border-radius: 1px;
 	padding: 20px;
+	text-align: center;
 }
 
 .service span {
@@ -244,32 +245,27 @@ main > h1 {
 }
 
 #wells ul > a:nth-child(1) li {
-	background-color: rgba(20,170,85,1);
+	background-color: gold;
 	text-shadow: 0 0 15px black;
 }
 
 #wells ul > a:nth-child(2) li {
-	background-color: rgba(135,165,50,1);
+	background-color: rgba(20,170,85,1);
 	text-shadow: 0 0 15px black;
 }
 
 #wells ul > a:nth-child(3) li {
-	background-color: rgba(255,120,15,1);
-	text-shadow: 0 0 15px black;
-}
-
-#wells ul > a:nth-child(4) li {
 	background-color: rgba(75,165,255,1);
 	text-shadow: 0 0 15px black;
 }
 
-#wells ul > a:nth-child(5) li {
-	background-color: rgba(230,220,10,1);
+#wells ul > a:nth-child(4) li {
+	background-color: rgba(255,120,15,1);
 	text-shadow: 0 0 15px black;
 }
 
-#wells ul > a:nth-child(6) li {
-	background-color: rgba(200,145,220,1);
+#wells ul > a:nth-child(5) li {
+	background-color: grey;
 	text-shadow: 0 0 15px black;
 }
 
@@ -278,6 +274,7 @@ main > h1 {
 	font-size: 1.8em;
 	font-family: Fredoka One;
 	text-decoration: none;
+	padding: 0;
 }
 
 #wells ul > a > li > img {
@@ -531,7 +528,7 @@ main .infoContainer .infoText p {
     z-index: 3;
     color: #fff;
     text-align: center;
-    text-transform: uppercase;
+	text-transform: uppercase;
     text-shadow: 1px 1px 0 rgba(0,0,0,.75);
       -webkit-transform: translate3d(-50%,-50%,0);
          -moz-transform: translate3d(-50%,-50%,0);
